@@ -11,7 +11,7 @@ public class Main {
     private static CharService charService;
 
     static {
-        pathToFile = "src/main/file2.txt";
+        pathToFile = "src/main/file.txt";
         fileParser = new FileParserImpl();
         charService = new CharServiceImpl();
     }
