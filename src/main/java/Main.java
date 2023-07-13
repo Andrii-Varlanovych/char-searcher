@@ -19,7 +19,6 @@ public class Main {
     public static void main(String[] args) {
         String stringFromFile = fileParser.getStringFromFile(pathToFile);
         List<Character> uniqueCharFromWord = charService.getUniqueCharFromWord(stringFromFile);
-        System.out.println(uniqueCharFromWord);
         charService.printUniqueCharFromList(uniqueCharFromWord);
     }
 }
