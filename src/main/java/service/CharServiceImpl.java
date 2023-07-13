@@ -33,12 +33,12 @@ public class CharServiceImpl implements CharService {
             return;
         }
         Map<Character, Integer> characterIntegerMap = new LinkedHashMap<>();
-        for (char charAt : characterList) {
-            characterIntegerMap.put(charAt, characterIntegerMap.getOrDefault(charAt, 0) + 1);
+        for (Character character : characterList) {
+            characterIntegerMap.put(character, characterIntegerMap.getOrDefault(character, 0) + 1);
         }
-        for (char c : characterList) {
-            if (characterIntegerMap.get(c) == 1) {
-                System.out.println("First unique symbol : " + c);
+        for (Character character : characterIntegerMap.keySet()) {
+            if (characterIntegerMap.get(character) == 1) {
+                System.out.println("First unique symbol : " + character);
                 return;
             }
         }
