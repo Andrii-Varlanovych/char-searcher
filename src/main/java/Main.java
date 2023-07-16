@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Main {
 
-    private static String pathToFile;
-    private static FileParser fileParser;
-    private static CharService charService;
+    private static final String pathToFile;
+    private static final FileParser fileParser;
+    private static final CharService charService;
 
     static {
         pathToFile = "src/main/file.txt";
